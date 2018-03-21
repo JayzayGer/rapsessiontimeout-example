@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: rap.session.jettycustomizer
+Bundle-SymbolicName: rap.session.jettycustomizer
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: org.eclipse.equinox.http.jetty;bundle-version="3.4.0";x-internal:=true
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: rap.session.jettycustomizer
