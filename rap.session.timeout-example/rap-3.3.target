@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="RAP E4 3.3" sequenceNumber="4">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.rap.e4.equinox.target.feature.feature.group" version="3.3.1.20171025-0946"/>
+<unit id="org.eclipse.rap.e4.examples.feature.feature.group" version="3.3.0.20170714-0733"/>
+<unit id="org.eclipse.rap.e4.feature.feature.group" version="3.3.0.20170913-0934"/>
+<unit id="org.eclipse.rap.e4.sdk.feature.feature.group" version="3.3.0.20170913-0934"/>
+<repository location="http://download.eclipse.org/rt/rap/3.3/e4/SR1-20171025-1219/"/>
+</location>
+</locations>
+</target>
