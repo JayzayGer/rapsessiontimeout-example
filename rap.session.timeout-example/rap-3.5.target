@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="RAP E4 3.3" sequenceNumber="5">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.rap.e4.equinox.target.feature.feature.group" version="3.5.0.20180312-0956"/>
+<unit id="org.eclipse.rap.e4.feature.feature.group" version="3.5.0.20180309-1244"/>
+<repository location="http://download.eclipse.org/rt/rap/3.5/e4"/>
+</location>
+</locations>
+</target>
