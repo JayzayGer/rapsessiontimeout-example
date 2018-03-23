@@ -1,8 +1,6 @@
 package rap.session.jettycustomizer;
 
 import java.util.Dictionary;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.servlet.SessionTrackingMode;
 
@@ -26,18 +24,18 @@ public class SessionCookieCustomizer extends JettyCustomizer {
 	@Override
 	public Object customizeContext(final Object context, final Dictionary<String, ?> settings) {
 		Object result = super.customizeContext(context, settings);
-		customizeSessionManager(result);
+		int port = (int) settings.get("http.port");
+		customizeSessionManager(result, port);
 		return result;
 	}
 
-	private static void customizeSessionManager(final Object context) {
+	private void customizeSessionManager(final Object context, final int port) {
 		if (context instanceof ServletContextHandler) {
 			ServletContextHandler jettyContext = (ServletContextHandler) context;
 			SessionHandler sessionHandler = jettyContext.getSessionHandler();
 			if (sessionHandler != null) {
-				Set<SessionTrackingMode> trackingModeSet = new HashSet<>();
-				trackingModeSet.add(SessionTrackingMode.URL);
-				sessionHandler.setSessionTrackingModes(trackingModeSet);
+				String cookieName = "JSESSIONID_" + port;
+				sessionHandler.setSessionCookie(cookieName);
 			}
 		}
 	}
